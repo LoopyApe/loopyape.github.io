@@ -1,43 +1,37 @@
----
-limit: 25
----
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-{% if site.url %}
-  {% assign base = site.url %}
-{% elsif site.github.url %}
-  {% assign base = site.github.url %}
-{% endif %}
-  <title>{{ site.title }}</title>
-  <generator uri="https://github.com/jekyll/jekyll">Jekyll v{{ jekyll.version }}</generator>
-    <icon>{{ site.url }}/apple-touch-icon-precomposed.png</icon>
-  <subtitle>{{ site.description }}</subtitle>
-  <link href="{{ base }}{{ page.url }}" rel="self"/>
-  <link href="{{ base }}/" rel="alternate" type="text/html"/>
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>{{ base }}/</id>
+
+  <title>LoopyApe Games</title>
+  <generator uri="https://github.com/jekyll/jekyll">Jekyll v2.5.3</generator>
+    <icon>/apple-touch-icon-precomposed.png</icon>
+  <subtitle>An open-source game developer company</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="/" rel="alternate" type="text/html"/>
+  <updated>2016-01-02T21:41:14+01:00</updated>
+  <id>/</id>
   <author>
-    <name>{{ site.owner.name | xml_escape }}</name>
-    <uri>{{ site.url }}/</uri>
-    {% if site.owner.email %}<email>{{ site.owner.email }}</email>{% endif %}
+    <name></name>
+    <uri>/</uri>
+    
   </author>
 
-  {% for post in site.posts limit: page.limit %}
+  
   <entry>
-    <title>{{ post.title | xml_escape }}</title>
-    <link href="{{ base }}{{ post.url }}"/>
-    <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>{{ base }}{{ post.id }}</id>
+    <title>Test</title>
+    <link href="/games/new-post/"/>
+    <updated>2014-06-01T00:00:00+02:00</updated>
+    <id>/games/new-post</id>
     <author>
-      <name>{{ site.owner.name | xml_escape }}</name>
-      <uri>{{ site.url }}/</uri>
-      {% if site.owner.email %}<email>{{ site.owner.email }}</email>{% endif %}
+      <name></name>
+      <uri>/</uri>
+      
     </author>
     <content type="html">
-      {% if post.image.feature %}&lt;img src=&quot;{{ site.url }}/images/{{ post.image.feature }}&quot;&gt;&lt;br/&gt;{% endif %}
-      {{ post.content | xml_escape }}
+      &lt;img src=&quot;/images/branch-1600x800.jpg&quot;&gt;&lt;br/&gt;
+      &lt;p&gt;This is a test&lt;/p&gt;
+
     </content>
   </entry>
-  {% endfor %}
+  
   
 </feed>

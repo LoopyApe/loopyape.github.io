@@ -7,7 +7,7 @@
    ========================================================================== */
 
 #masthead {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	padding: $gutter;
 	z-index: 5;
 	@include transform(translate(0,0));
@@ -85,7 +85,7 @@
 /* Top menu navigation */
 
 .top-menu {
-	margin-top: 20px;
+	margin-top: 25px;
 	display: none;
 	position: relative;
 	@include media($medium) {

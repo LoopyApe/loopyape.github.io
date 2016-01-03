@@ -4,3 +4,13 @@
   url: /games/
   excerpt: "Things I’ve designed, illustrated, developed, coded, and whatever."
   image: 300x200.gif
+
+- title: Blog
+  url: /blog/
+  excerpt: "Things I’ve designed, illustrated, developed, coded, and whatever."
+  image: 300x200.gif
+
+- title: About
+  url: /about/
+  excerpt: "Things I’ve designed, illustrated, developed, coded, and whatever."
+  image: 300x200.gif

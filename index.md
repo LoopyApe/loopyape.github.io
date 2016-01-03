@@ -1,7 +1,15 @@
 ---
 layout: archive
 permalink: /
-title: ""
+title:
+date: 2016-01-03
+image:
+  feature:
+  credit:
+  creditlink: 
+modified:
+excerpt:
+ads: false
 ---
 
 <div class="tiles">
